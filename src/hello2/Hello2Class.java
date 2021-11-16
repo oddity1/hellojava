@@ -8,7 +8,8 @@ public class Hello2Class {
 		// 잘 부탁드립니다
 		
 		String b = "이승현"; //문자열 변수 선언
-		int a = 27; // 정수 변수 선언
+		int a = 27; 
+		
 		System.out.println("안녕하세요");
 		System.out.println("나는 " + b + " 입니다");
 		System.out.println("만나서 반갑습니다");
