@@ -72,23 +72,20 @@ public class Hello2Class {
 
 		// 과제3
 
-		// 나무베기 기능 (배열, 무한, 제어)
+		// 배열, 무한, 제어
 
-	
-
-		
-		// 오징어 게임 
+		// 오징어 게임
 		int player = 7;
 
-		//참가자 게임 통과 횟수
+		// 참가자 게임 통과 횟수
 		int[] odds = { 2, 3, 1, 5, 1, 1, 8 };
 
 		// 참가자 번호
 		int playerNo = 0;
-		
+
 		// 여기 부터 반복
 		while (true) {
-//			treeNo++; // 나무 번호를 증가
+
 			for (int i = 1; i <= odds[playerNo]; i++) {
 				System.out.println((playerNo + 1) + "번 참가자 " + i + "번째 게임 참가");
 				// 만약에 참가자의 생명만큼 찍혔으면
@@ -96,17 +93,17 @@ public class Hello2Class {
 					// 게임 탈락
 					System.out.println("참가자 게임 탈락");
 					player = player - 1; // 참가자 줄임
-					
+
 				} else {
-				
+
 					System.out.println("참가자 게임 통과");
 				}
 			}
-			playerNo++; // 다음 나무 나오세요~
+			playerNo++;
 			System.out.print("남아있는 참가자는? ");
 			System.out.println(player);
 			System.out.println(); // 한칸 내리기
-			// 나무 총 갯수와 나무 끝 번호가 같으면 종료
+
 			// 반복 멈추기
 			if (player == 0) {
 				break;
